@@ -19,7 +19,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 setup(
-    name="markdown_graphviz_svg_extension",
+    name="markdown_graphviz_svg",
     version=VERSION,
     py_modules=["markdown_graphviz_svg"],
     install_requires=['Markdown>=2.3.1'],
