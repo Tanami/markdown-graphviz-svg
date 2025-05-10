@@ -16,7 +16,7 @@ Because this uses the special `{% %}` syntax, it should be compatible with Jinja
 
 # Usage
  - Run `setup.py install` or put this folder in your $PYTHONPATH
- - Add `markdown-graphviz-svg` to your extensions list in ReText's configuration
+ - Add `markdown_graphviz_svg` to your extensions list in ReText's configuration
  - Use like this:
 
 ```
