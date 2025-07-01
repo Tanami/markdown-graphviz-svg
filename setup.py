@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup
+from setuptools import setup, find_packages
 
 VERSION = '1.1'
 
@@ -21,12 +21,14 @@ if sys.argv[-1] == 'publish':
 setup(
     name="markdown_graphviz_svg",
     version=VERSION,
-    py_modules=["markdown_graphviz_svg"],
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=['Markdown>=2.3.1'],
     author="Tanami Muller",
     author_email="weitzeug@gmail.com",
     description="Embeds Graphviz's SVG output into Markdown.",
-    long_description="This is a rewrite of python-markdown-graphviz with a different processing method, it is meant for use with ReText.",
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     license="MIT",
     url="https://github.com/Tanami/markdown-graphviz-svg",
     classifiers=[
@@ -35,8 +37,6 @@ setup(
         'Topic :: Documentation',
         'Topic :: Text Processing',
         'License :: OSI Approved :: MIT License',
-        # Specify the Python versions you support here. In particular, ensure
-        # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',

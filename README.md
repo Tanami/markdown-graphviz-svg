@@ -14,9 +14,11 @@ I did not implement the PNG rendering functionality because I don't use it. If y
 
 Because this uses the special `{% %}` syntax, it should be compatible with Jinja and other platforms that recognise it as such, however this is untested.
 
+# Install
+ - pip install git+https://github.com/Tanami/markdown-graphviz-svg
+
 # Usage
- - Run `setup.py install` or put this folder in your $PYTHONPATH
- - Add `markdown-graphviz-svg` to your extensions list in ReText's configuration
+ - Add `markdown_graphviz_svg` to your extensions list in ReText's configuration
  - Use like this:
 
 ```
